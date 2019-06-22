@@ -37,9 +37,6 @@ func main() {
 	r := gin.Default()
 
 	r.GET("/api/todos", getTodosHandler)
-	// r.GET("/api/todos/:id", getTodosByIdHandler)
-	// r.POST("/api/todos", postTodosHandler)
-	// r.DELETE("/api/todos/:id", deleteTodosByIdHandler)
 
 	r.Run(":1234")
 }
